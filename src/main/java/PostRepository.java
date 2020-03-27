@@ -12,12 +12,16 @@ public class PostRepository {
 
     public void save(String username, String content) {
         Post post = new Post(content);
-        List<Post> userPosts = posts.getOrDefault(username,
-                new ArrayList<>()
-        );
+        List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);
 
         posts.put(username, userPosts);
+    }
+
+    private List<Post> getOrCreateUserPosts(String username) {
+        return posts.getOrDefault(username,
+                    new ArrayList<>()
+            );
     }
 
     public List<Post> getByUsername(String username) {

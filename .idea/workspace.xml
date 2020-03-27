@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostCommandShould.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommandFactoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommandFactoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CommandFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommandFactoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CommandFactoryShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -170,22 +159,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585342183044">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585342332995">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585342183044" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585342183042">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585342332995" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585342332994">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585342183042" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585342183040">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585342332994" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585342332993">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585342183040" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585342183043">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585342332993" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585342332995">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585342183043" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585342332995" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585341408443">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -219,6 +208,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585341658493" />
+    <state x="378" y="160" key="extract.method.dialog" timestamp="1585342382723">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585342382723" />
     <state x="283" y="97" key="new project wizard" timestamp="1585301653767">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
