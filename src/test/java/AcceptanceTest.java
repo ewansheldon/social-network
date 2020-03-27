@@ -13,17 +13,19 @@ public class AcceptanceTest {
     @Mock private PrintStream output;
     private CommandLineInputParser parser;
     private SocialNetwork socialNetwork;
+    private CommandFactory commandFactory;
+    private SocialNetworkCommandLineClient client;
 
     @BeforeEach
     void setUp() {
         parser = new CommandLineInputParser();
-        socialNetwork = new SocialNetwork();
+        commandFactory = new CommandFactory();
+        socialNetwork = new SocialNetwork(commandFactory);
+        client = new SocialNetworkCommandLineClient(output, parser, socialNetwork);
     }
 
     @Test
     void should_display_a_users_posts_after_posting() {
-        SocialNetworkCommandLineClient client = new SocialNetworkCommandLineClient(output, parser, socialNetwork);
-
         client.executeCommand("Alice -> I love the weather today");
         client.executeCommand("Alice");
 
