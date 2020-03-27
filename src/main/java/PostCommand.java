@@ -1,8 +1,15 @@
 public class PostCommand implements Command {
-    public PostCommand(String username, String message) {
+    private final PostRepository postRepository;
+    private final String message;
+    private final String username;
+
+    public PostCommand(PostRepository postRepository, String username, String message) {
+        this.postRepository = postRepository;
+        this.message = message;
+        this.username = username;
     }
 
     public void execute() {
-        throw new UnsupportedOperationException();
+        postRepository.save(username, message);
     }
 }
