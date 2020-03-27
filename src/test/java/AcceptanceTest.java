@@ -4,29 +4,29 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.io.PrintStream;
+
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 public class AcceptanceTest {
-    @Mock
-    private Console console;
-    private UserRepository userRepository;
-    private InputParser inputParser;
-    private CommandFactory commandFactory;
+    @Mock private PrintStream output;
+    private CommandLineInputParser parser;
+    private SocialNetwork socialNetwork;
 
     @BeforeEach
     void setUp() {
-        userRepository = new UserRepository();
-        inputParser = new InputParser();
-        commandFactory = new CommandFactory(userRepository, inputParser);
+        parser = new CommandLineInputParser();
+        socialNetwork = new SocialNetwork();
     }
 
     @Test
-    void returns_users_post_after_creating_a_post() {
-        SocialNetworkClient socialNetworkClient = new SocialNetworkClient(commandFactory);
-        socialNetworkClient.run("Alice -> I love the weather today");
-        socialNetworkClient.run("Alice");
+    void should_display_a_users_posts_after_posting() {
+        SocialNetworkCommandLineClient client = new SocialNetworkCommandLineClient(output, parser, socialNetwork);
 
-        verify(console).printLine("I love the weather today (5 minutes ago)");
+        client.executeCommand("Alice -> I love the weather today");
+        client.executeCommand("Alice");
+
+        verify(output).println("I love the weather today (5 minutes ago)");
     }
 }
