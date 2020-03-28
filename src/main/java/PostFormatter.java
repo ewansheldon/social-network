@@ -1,5 +1,4 @@
 import java.io.PrintStream;
-import java.net.URLConnection;
 import java.util.List;
 
 public class PostFormatter {
