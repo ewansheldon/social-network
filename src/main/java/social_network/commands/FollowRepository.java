@@ -13,12 +13,15 @@ public class FollowRepository {
     }
 
     public void save(String user, String followee) {
-        List<String> userFollows = follows.getOrDefault(user, new ArrayList<>());
+        List<String> userFollows = follows.getOrDefault(user,
+                new ArrayList<>(Collections.singleton(user))
+        );
+
         userFollows.add(followee);
         follows.put(user, userFollows);
     }
 
     public List<String> getFollowsByUser(String user) {
-        return follows.getOrDefault(user, Collections.emptyList());
+        return follows.getOrDefault(user, List.of(user));
     }
 }

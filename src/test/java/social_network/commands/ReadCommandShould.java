@@ -24,7 +24,7 @@ class ReadCommandShould {
         String username = "Alice";
         ReadCommand command = new ReadCommand(postRepository, postFormatter, username);
         LocalDateTime date = LocalDateTime.now();
-        List<Post> posts = List.of(new Post("I love the weather today", date));
+        List<Post> posts = List.of(new Post(username, "I love the weather today", date));
         given(postRepository.getByUsername(username)).willReturn(posts);
 
         command.execute();

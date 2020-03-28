@@ -41,4 +41,14 @@ class CommandFactoryShould {
 
         assertTrue(command instanceof FollowCommand);
     }
+
+    @Test
+    void return_a_wall_command_when_type_wall() {
+        CommandFactory commandFactory = new CommandFactory(postRepository, followRepository, postFormatter);
+        Command command = commandFactory.create(
+                "Alice", "wall", null
+        );
+
+        assertTrue(command instanceof WallCommand);
+    }
 }

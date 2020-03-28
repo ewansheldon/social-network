@@ -15,6 +15,10 @@ public class CommandFactory {
     }
 
     public Command create(String username, String command, String argument) {
+        if (command.equals("wall")) {
+            return new WallCommand(username, postRepository, followRepository, postFormatter);
+        }
+
         if (command.equals("follow")) {
             return new FollowCommand(followRepository, username, argument);
         }

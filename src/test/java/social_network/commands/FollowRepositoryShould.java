@@ -8,11 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FollowRepositoryShould {
     @Test
-    void return_empty_list_of_followees_for_user_With_no_follows() {
+    void return_users_self_by_default_for_follows_by_user() {
         FollowRepository followRepository = new FollowRepository();
         List<String> followees = followRepository.getFollowsByUser("Alice");
 
-        assertEquals(0, followees.size());
+        assertEquals(1, followees.size());
+        assertEquals("Alice", followees.get(0));
     }
 
     @Test
@@ -21,8 +22,8 @@ class FollowRepositoryShould {
         followRepository.save("Alice", "Bob");
         List<String> followees = followRepository.getFollowsByUser("Alice");
 
-        assertEquals(1, followees.size());
-        assertEquals("Bob", followees.get(0));
+        assertEquals(2, followees.size());
+        assertEquals("Bob", followees.get(1));
     }
 
     @Test
@@ -32,9 +33,9 @@ class FollowRepositoryShould {
         followRepository.save("Alice", "Jonathan");
         List<String> followees = followRepository.getFollowsByUser("Alice");
 
-        assertEquals(2, followees.size());
-        assertEquals("Bob", followees.get(0));
-        assertEquals("Jonathan", followees.get(1));
+        assertEquals(3, followees.size());
+        assertEquals("Bob", followees.get(1));
+        assertEquals("Jonathan", followees.get(2));
     }
 
     @Test
@@ -44,7 +45,7 @@ class FollowRepositoryShould {
         followRepository.save("Bob", "Jonathan");
         List<String> followees = followRepository.getFollowsByUser("Alice");
 
-        assertEquals(1, followees.size());
-        assertEquals("Bob", followees.get(0));
+        assertEquals(2, followees.size());
+        assertEquals("Bob", followees.get(1));
     }
 }

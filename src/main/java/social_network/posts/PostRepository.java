@@ -14,7 +14,7 @@ public class PostRepository {
     }
 
     public void save(String username, String content) {
-        Post post = new Post(content, dateTime.now());
+        Post post = new Post(username, content, dateTime.now());
         List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);
         posts.put(username, userPosts);
@@ -22,13 +22,21 @@ public class PostRepository {
 
     private List<Post> getOrCreateUserPosts(String username) {
         return posts.getOrDefault(username,
-                    new ArrayList<>()
-            );
+                new ArrayList<>()
+        );
     }
 
     public List<Post> getByUsername(String username) {
         return posts.getOrDefault(username,
                 Collections.emptyList()
         );
+    }
+
+    public List<Post> getByUsers(List<String> users) {
+        ArrayList<Post> followPosts = new ArrayList<>();
+        for (String user : users) {
+            followPosts.addAll(posts.get(user));
+        }
+        return followPosts;
     }
 }
