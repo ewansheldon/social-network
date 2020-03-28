@@ -1,3 +1,7 @@
+package social_network.posts;
+
+import social_network.date.TimeDifference;
+
 import java.io.PrintStream;
 import java.util.List;
 

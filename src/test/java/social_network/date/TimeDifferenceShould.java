@@ -1,3 +1,5 @@
+package social_network.date;
+
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

@@ -1,3 +1,5 @@
+package social_network.commands;
+
 public class ParsedCommand {
     public final String username;
     public final String command;

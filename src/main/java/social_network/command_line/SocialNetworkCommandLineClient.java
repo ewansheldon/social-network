@@ -1,3 +1,8 @@
+package social_network.command_line;
+
+import social_network.commands.ParsedCommand;
+import social_network.SocialNetwork;
+
 public class SocialNetworkCommandLineClient {
     private CommandLineInputParser parser;
     private SocialNetwork socialNetwork;

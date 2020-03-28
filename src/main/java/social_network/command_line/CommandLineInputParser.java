@@ -1,3 +1,7 @@
+package social_network.command_line;
+
+import social_network.commands.ParsedCommand;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;

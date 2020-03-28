@@ -1,7 +1,11 @@
+package social_network.command_line;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import social_network.commands.ParsedCommand;
+import social_network.SocialNetwork;
 
 import java.io.PrintStream;
 

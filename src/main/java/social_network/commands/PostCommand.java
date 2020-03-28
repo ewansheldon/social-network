@@ -1,3 +1,7 @@
+package social_network.commands;
+
+import social_network.posts.PostRepository;
+
 public class PostCommand implements Command {
     private final PostRepository postRepository;
     private final String message;

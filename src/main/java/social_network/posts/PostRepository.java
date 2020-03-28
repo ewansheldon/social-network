@@ -1,3 +1,7 @@
+package social_network.posts;
+
+import social_network.date.DateTime;
+
 import java.util.*;
 
 public class PostRepository {

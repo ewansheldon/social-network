@@ -1,3 +1,8 @@
+package social_network.commands;
+
+import social_network.posts.PostFormatter;
+import social_network.posts.PostRepository;
+
 public class CommandFactory {
     private PostRepository postRepository;
     private PostFormatter postFormatter;

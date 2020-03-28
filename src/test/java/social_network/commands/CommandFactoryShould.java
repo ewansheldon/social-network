@@ -1,5 +1,9 @@
+package social_network.commands;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import social_network.posts.PostFormatter;
+import social_network.posts.PostRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 

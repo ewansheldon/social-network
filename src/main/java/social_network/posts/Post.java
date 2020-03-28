@@ -1,3 +1,5 @@
+package social_network.posts;
+
 import java.time.LocalDateTime;
 import java.util.Calendar;
 

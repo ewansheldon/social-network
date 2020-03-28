@@ -1,3 +1,8 @@
+package social_network;
+
+import social_network.commands.Command;
+import social_network.commands.CommandFactory;
+
 public class SocialNetwork {
     private CommandFactory commandFactory;
 

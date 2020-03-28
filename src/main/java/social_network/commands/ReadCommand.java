@@ -1,3 +1,9 @@
+package social_network.commands;
+
+import social_network.posts.Post;
+import social_network.posts.PostFormatter;
+import social_network.posts.PostRepository;
+
 import java.util.List;
 
 public class ReadCommand implements Command {

@@ -1,9 +1,18 @@
+package social_network;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import social_network.command_line.CommandLineInputParser;
+import social_network.command_line.SocialNetworkCommandLineClient;
+import social_network.commands.CommandFactory;
+import social_network.date.DateTime;
+import social_network.date.TimeDifference;
+import social_network.posts.PostFormatter;
+import social_network.posts.PostRepository;
 
 import java.io.PrintStream;
 import java.time.LocalDateTime;

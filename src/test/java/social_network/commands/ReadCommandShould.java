@@ -1,7 +1,12 @@
+package social_network.commands;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import social_network.posts.Post;
+import social_network.posts.PostFormatter;
+import social_network.posts.PostRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;

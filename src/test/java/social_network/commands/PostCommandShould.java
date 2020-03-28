@@ -1,7 +1,10 @@
+package social_network.commands;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import social_network.posts.PostRepository;
 
 import static org.mockito.Mockito.verify;
 

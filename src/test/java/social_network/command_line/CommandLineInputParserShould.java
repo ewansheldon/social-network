@@ -1,4 +1,7 @@
+package social_network.command_line;
+
 import org.junit.jupiter.api.Test;
+import social_network.commands.ParsedCommand;
 
 import static org.junit.jupiter.api.Assertions.*;
 

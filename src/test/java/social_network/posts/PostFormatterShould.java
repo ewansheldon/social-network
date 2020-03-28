@@ -1,7 +1,10 @@
+package social_network.posts;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import social_network.date.TimeDifference;
 
 import java.io.PrintStream;
 import java.time.LocalDateTime;
