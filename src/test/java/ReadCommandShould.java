@@ -3,6 +3,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import static org.mockito.BDDMockito.given;
@@ -17,7 +19,8 @@ class ReadCommandShould {
     void fetch_all_posts_for_user_and_send_to_formatter() {
         String username = "Alice";
         ReadCommand command = new ReadCommand(postRepository, postFormatter, username);
-        List<Post> posts = List.of(new Post("I love the weather today"));
+        Calendar date = GregorianCalendar.getInstance();
+        List<Post> posts = List.of(new Post("I love the weather today", date));
         given(postRepository.getByUsername(username)).willReturn(posts);
 
         command.execute();

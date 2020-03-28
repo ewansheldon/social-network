@@ -10,7 +10,6 @@ import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 public class AcceptanceTest {
-    @Mock private PrintStream output;
     private CommandLineInputParser parser;
     private SocialNetwork socialNetwork;
     private CommandFactory commandFactory;
@@ -18,14 +17,17 @@ public class AcceptanceTest {
     private PostRepository postRepository;
     private PostFormatter postFormatter;
 
+    @Mock private PrintStream output;
+
     @BeforeEach
     void setUp() {
         parser = new CommandLineInputParser();
         postRepository = new PostRepository();
-        postFormatter = new PostFormatter();
+        TimeDifference timeDiff = new TimeDifference();
+        postFormatter = new PostFormatter(output, timeDiff);
         commandFactory = new CommandFactory(postRepository, postFormatter);
         socialNetwork = new SocialNetwork(commandFactory);
-        client = new SocialNetworkCommandLineClient(output, parser, socialNetwork);
+        client = new SocialNetworkCommandLineClient(parser, socialNetwork);
     }
 
     @Test

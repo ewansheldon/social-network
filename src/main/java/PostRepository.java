@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class PostRepository {
     private HashMap<String, List<Post>> posts;
@@ -11,7 +8,8 @@ public class PostRepository {
     }
 
     public void save(String username, String content) {
-        Post post = new Post(content);
+        Calendar date = GregorianCalendar.getInstance();
+        Post post = new Post(content, date);
         List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);
 
