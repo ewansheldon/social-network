@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/date/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/date/DateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CommandLineInputParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DateTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ParsedCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostFormatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReadCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SocialNetwork.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SocialNetworkCommandLineClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TimeDifference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommandFactoryShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommandLineInputParserShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PostCommandShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PostFormatterShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PostRepositoryShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReadCommandShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SocialNetworkCommandLineClientShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SocialNetworkShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TimeDifferenceShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/command_line/CommandLineInputParserShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/command_line/CommandLineInputParserShould.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AcceptanceTest">
+  <component name="RunManager" selected="JUnit.CommandLineInputParserShould">
     <configuration name="CommandLineReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="social_network.command_line.CommandLineReader" />
       <module name="social-network" />
@@ -135,19 +109,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommandLineInputParserShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostFormatterShould" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.command_line.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network.command_line" />
+      <option name="MAIN_CLASS_NAME" value="social_network.command_line.CommandLineInputParserShould" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadCommandShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
-      <option name="PACKAGE_NAME" value="social_network.commands" />
-      <option name="MAIN_CLASS_NAME" value="social_network.commands.ReadCommandShould" />
+      <option name="PACKAGE_NAME" value="social_network.posts" />
+      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostFormatterShould" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandLineInputParserShould" />
         <item itemvalue="JUnit.AcceptanceTest" />
         <item itemvalue="Application.CommandLineReader" />
         <item itemvalue="JUnit.TimeDifferenceShould" />
         <item itemvalue="JUnit.PostFormatterShould" />
-        <item itemvalue="JUnit.ReadCommandShould" />
       </list>
     </recent_temporary>
   </component>
@@ -202,22 +182,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585425753520">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585426348395">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585425753520" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585425753519">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585426348395" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585426348393">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585425753519" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585425753518">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585426348393" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585426348388">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585425753518" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585425753520">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585426348388" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585426348394">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585425753520" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585426348394" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -267,9 +247,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585425838235">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585426260560">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585425838235" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585426260560" />
   </component>
 </project>

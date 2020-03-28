@@ -18,10 +18,11 @@ public class CommandLineInputParser {
         commands = new HashMap<>();
         commands.put(null, "read");
         commands.put("->", "post");
+        commands.put("follows", "follow");
     }
 
     public ParsedCommand getCommandComponents(String input) {
-        Pattern pattern = Pattern.compile("(\\w+)\\s?(->)?\\s?(.+)?");
+        Pattern pattern = Pattern.compile("(\\w+)\\s?(->|follows)?\\s?(.+)?");
         Matcher matcher = pattern.matcher(input);
         matcher.matches();
         String command = commands.get(matcher.group(2));

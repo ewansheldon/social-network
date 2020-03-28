@@ -25,4 +25,15 @@ class CommandLineInputParserShould {
         assertEquals("read", parsedCommand.command);
         assertNull(parsedCommand.argument);
     }
+
+    @Test
+    void create_follow_command_components_from_follow_input_string() {
+        CommandLineInputParser parser = new CommandLineInputParser();
+        ParsedCommand parsedCommand = parser.getCommandComponents("Alice follows Bob");
+
+        assertEquals("Alice", parsedCommand.username);
+        assertEquals("follow", parsedCommand.command);
+        assertEquals("Bob", parsedCommand.argument);
+    }
+
 }
