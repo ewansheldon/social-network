@@ -1,10 +1,11 @@
+import java.time.LocalDateTime;
 import java.util.Calendar;
 
 public class Post {
     private String content;
-    private Calendar date;
+    private LocalDateTime date;
 
-    public Post(String content, Calendar date) {
+    public Post(String content, LocalDateTime date) {
         this.content = content;
         this.date = date;
     }
@@ -13,7 +14,7 @@ public class Post {
         return content;
     }
 
-    public Calendar getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 }

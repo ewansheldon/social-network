@@ -4,8 +4,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.io.PrintStream;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.mockito.BDDMockito.given;
@@ -19,7 +18,7 @@ class PostFormatterShould {
     @Test
     void should_print_the_posts_and_timestamp() {
         PostFormatter formatter = new PostFormatter(output, timeDiff);
-        Calendar date = GregorianCalendar.getInstance();
+        LocalDateTime date = LocalDateTime.now();
         List<Post> posts = List.of(
                 new Post("I love the weather today", date)
         );

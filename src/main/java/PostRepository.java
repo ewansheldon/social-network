@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class PostRepository {
@@ -8,7 +9,7 @@ public class PostRepository {
     }
 
     public void save(String username, String content) {
-        Calendar date = GregorianCalendar.getInstance();
+        LocalDateTime date = LocalDateTime.now();
         Post post = new Post(content, date);
         List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);

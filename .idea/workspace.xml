@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TimeDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostFormatterShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SocialNetworkCommandLineClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SocialNetworkCommandLineClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TimeDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TimeDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PostFormatterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostFormatterShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ReadCommandShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadCommandShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SocialNetworkCommandLineClientShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SocialNetworkCommandLineClientShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Post.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PostFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SocialNetworkCommandLineClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SocialNetworkCommandLineClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PostFormatterShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PostFormatterShould.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ReadCommandShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReadCommandShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SocialNetworkCommandLineClientShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SocialNetworkCommandLineClientShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostFormatterShould">
+  <component name="RunManager" selected="JUnit.TimeDifferenceShould">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -113,15 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandLineInputParserShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommandLineInputParserShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PostFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,13 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TimeDifferenceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TimeDifferenceShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostFormatterShould" />
+        <item itemvalue="JUnit.TimeDifferenceShould" />
         <item itemvalue="JUnit.AcceptanceTest" />
+        <item itemvalue="JUnit.PostFormatterShould" />
         <item itemvalue="JUnit.ReadCommandShould" />
         <item itemvalue="JUnit.CommandFactoryShould" />
-        <item itemvalue="JUnit.CommandLineInputParserShould" />
       </list>
     </recent_temporary>
   </component>
@@ -164,10 +159,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585399958379">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585402656253">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1585399958379" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1585402656253" />
     <state x="344" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585401358691">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -176,22 +171,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585401720447">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585403669832">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585401720447" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585401720445">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585403669832" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585403669829">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585401720445" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585401720444">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585403669829" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585403669828">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585401720444" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585401720446">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585403669828" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585403669830">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585401720446" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585403669830" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -221,10 +216,10 @@
     </state>
     <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585387273352" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1585243308696" />
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585400597460">
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585401822970">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585400597460" />
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585401822970" />
     <state x="378" y="160" key="extract.method.dialog" timestamp="1585388065904">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -233,13 +228,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="283" y="97" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1585301653767" />
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585401265413">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585402474776">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585401265413" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585401596990">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585402474776" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585402682510">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585401596990" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585402682510" />
   </component>
 </project>
