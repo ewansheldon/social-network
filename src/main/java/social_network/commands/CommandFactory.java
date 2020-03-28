@@ -6,13 +6,19 @@ import social_network.posts.PostRepository;
 public class CommandFactory {
     private PostRepository postRepository;
     private PostFormatter postFormatter;
+    private FollowRepository followRepository;
 
-    public CommandFactory(PostRepository postRepository, PostFormatter postFormatter) {
+    public CommandFactory(PostRepository postRepository, FollowRepository followRepository, PostFormatter postFormatter) {
         this.postRepository = postRepository;
         this.postFormatter = postFormatter;
+        this.followRepository = followRepository;
     }
 
     public Command create(String username, String command, String argument) {
+        if (command.equals("follow")) {
+            return new FollowCommand(followRepository, username, argument);
+        }
+
         if (command.equals("post")) {
             return new PostCommand(postRepository, username, argument);
         }

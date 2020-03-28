@@ -2,6 +2,7 @@ package social_network.command_line;
 
 import social_network.SocialNetwork;
 import social_network.commands.CommandFactory;
+import social_network.commands.FollowRepository;
 import social_network.date.DateTime;
 import social_network.date.TimeDifference;
 import social_network.posts.PostFormatter;
@@ -21,6 +22,7 @@ public class CommandLineReader {
     private static CommandFactory commandFactory;
     private static SocialNetwork socialNetwork;
     private static SocialNetworkCommandLineClient client;
+    private static FollowRepository followRepository;
 
     public static void main(String[] args) {
         initialiseApplication();
@@ -38,11 +40,12 @@ public class CommandLineReader {
     private static void initialiseApplication() {
         parser = new CommandLineInputParser();
         dateTime = new DateTime();
-        postRepository = new PostRepository(dateTime);
         output = System.out;
         time = new TimeDifference();
+        postRepository = new PostRepository(dateTime);
         postFormatter = new PostFormatter(System.out, time);
-        commandFactory = new CommandFactory(postRepository, postFormatter);
+        followRepository = new FollowRepository();
+        commandFactory = new CommandFactory(postRepository, followRepository, postFormatter);
         socialNetwork = new SocialNetwork(commandFactory);
         client = new SocialNetworkCommandLineClient(parser, socialNetwork);
     }

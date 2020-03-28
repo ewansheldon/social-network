@@ -9,6 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import social_network.command_line.CommandLineInputParser;
 import social_network.command_line.SocialNetworkCommandLineClient;
 import social_network.commands.CommandFactory;
+import social_network.commands.FollowRepository;
 import social_network.date.DateTime;
 import social_network.date.TimeDifference;
 import social_network.posts.PostFormatter;
@@ -33,7 +34,8 @@ public class AcceptanceTest {
         PostRepository postRepository = new PostRepository(dateTime);
         TimeDifference timeDiff = new TimeDifference();
         PostFormatter postFormatter = new PostFormatter(output, timeDiff);
-        CommandFactory commandFactory = new CommandFactory(postRepository, postFormatter);
+        FollowRepository followRepository = new FollowRepository();
+        CommandFactory commandFactory = new CommandFactory(postRepository, followRepository, postFormatter);
         SocialNetwork socialNetwork = new SocialNetwork(commandFactory);
         CommandLineInputParser parser = new CommandLineInputParser();
         client = new SocialNetworkCommandLineClient(parser, socialNetwork);
