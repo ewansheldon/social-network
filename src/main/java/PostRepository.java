@@ -1,16 +1,16 @@
-import java.time.LocalDateTime;
 import java.util.*;
 
 public class PostRepository {
     private HashMap<String, List<Post>> posts;
+    private DateTime dateTime;
 
-    public PostRepository() {
+    public PostRepository(DateTime dateTime) {
+        this.dateTime = dateTime;
         this.posts = new HashMap<>();
     }
 
     public void save(String username, String content) {
-        LocalDateTime date = LocalDateTime.now();
-        Post post = new Post(content, date);
+        Post post = new Post(content, dateTime.now());
         List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);
 

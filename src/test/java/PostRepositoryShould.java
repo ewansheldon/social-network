@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 
 import java.util.List;
 
@@ -9,10 +10,11 @@ class PostRepositoryShould {
 
     public static final String USER = "Alice";
     private PostRepository postRepository;
+    @Mock private DateTime dateTime;
 
     @BeforeEach
     void setUp() {
-        postRepository = new PostRepository();
+        postRepository = new PostRepository(dateTime);
     }
 
     @Test

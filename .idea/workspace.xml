@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DateTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TimeDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TimeDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AcceptanceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PostRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PostRepositoryShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TimeDifferenceShould">
+  <component name="RunManager" selected="JUnit.AcceptanceTest">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -129,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TimeDifferenceShould" />
         <item itemvalue="JUnit.AcceptanceTest" />
+        <item itemvalue="JUnit.TimeDifferenceShould" />
         <item itemvalue="JUnit.PostFormatterShould" />
         <item itemvalue="JUnit.ReadCommandShould" />
         <item itemvalue="JUnit.CommandFactoryShould" />
@@ -163,22 +168,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585404143835">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585405020543">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585404143835" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585404143832">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585405020543" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585405020540">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585404143832" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585404143830">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585405020540" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585405020539">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585404143830" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585404143834">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585405020539" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585405020541">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585404143834" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585405020541" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -220,13 +225,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="283" y="97" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1585301653767" />
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585402474776">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585404384547">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585402474776" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585402682510">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585404384547" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585404940298">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585402682510" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585404940298" />
   </component>
 </project>

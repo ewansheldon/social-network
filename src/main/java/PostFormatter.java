@@ -1,4 +1,5 @@
 import java.io.PrintStream;
+import java.net.URLConnection;
 import java.util.List;
 
 public class PostFormatter {
@@ -11,7 +12,8 @@ public class PostFormatter {
     }
 
     public void read(List<Post> posts) {
-        for (Post post : posts) {
+        for (int i = posts.size() - 1; i >= 0; i--) {
+            Post post = posts.get(i);
             output.println(
                     post.getContent() + " (" + timeDiff.format(post.getDate()) + ")"
             );
