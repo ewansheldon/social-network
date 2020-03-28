@@ -10,17 +10,24 @@ public class TimeDifference {
         long secondsDiff = date.until(LocalDateTime.now(), ChronoUnit.SECONDS);
 
         if (secondsDiff >= DAY) {
-            return secondsDiff / DAY + " days ago";
+            long days = secondsDiff / DAY;
+            return days + " day" + pluralise(days) + " ago";
         }
 
         if (secondsDiff >= HOUR) {
-            return secondsDiff / HOUR + " hours ago";
+            long hours = secondsDiff / HOUR;
+            return hours + " hour" + pluralise(hours) + " ago";
         }
 
         if (secondsDiff >= MINUTE) {
-            return secondsDiff / MINUTE + " minutes ago";
+            long minutes = secondsDiff / MINUTE;
+            return minutes + " minute" + pluralise(minutes) + " ago";
         }
 
-        return secondsDiff + " seconds ago";
+        return secondsDiff + " second" + pluralise(secondsDiff) + " ago";
+    }
+
+    private String pluralise(long amount) {
+        return amount == 1 ? "" : "s";
     }
 }

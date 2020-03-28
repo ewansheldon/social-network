@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PostRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TimeDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TimeDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostFormatterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostFormatterShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReadCommandShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReadCommandShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PostFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PostFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PostFormatterShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PostFormatterShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ReadCommandShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReadCommandShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TimeDifferenceShould.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,22 +163,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585403669832">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585404143835">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585403669832" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585403669829">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585404143835" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585404143832">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585403669829" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585403669828">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585404143832" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585404143830">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585403669828" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585403669830">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585404143830" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585404143834">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585403669830" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585404143834" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
