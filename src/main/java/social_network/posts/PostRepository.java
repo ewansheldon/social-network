@@ -17,7 +17,6 @@ public class PostRepository {
         Post post = new Post(content, dateTime.now());
         List<Post> userPosts = getOrCreateUserPosts(username);
         userPosts.add(post);
-
         posts.put(username, userPosts);
     }
 
