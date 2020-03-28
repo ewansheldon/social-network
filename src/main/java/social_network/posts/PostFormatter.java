@@ -16,8 +16,7 @@ public class PostFormatter {
     }
 
     public void read(List<Post> posts) {
-        Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
-        posts.sort(compareByDate.reversed());
+        sortPostsByDate(posts);
         for (Post post : posts) {
             output.println(
                     formatted(post)
@@ -26,13 +25,17 @@ public class PostFormatter {
     }
 
     public void wall(List<Post> posts) {
-        Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
-        posts.sort(compareByDate.reversed());
+        sortPostsByDate(posts);
         for (Post post : posts) {
             output.println(
                     post.getUsername() + " - " + formatted(post)
             );
         }
+    }
+
+    private void sortPostsByDate(List<Post> posts) {
+        Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
+        posts.sort(compareByDate.reversed());
     }
 
     private String formatted(Post post) {

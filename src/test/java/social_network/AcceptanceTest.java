@@ -94,7 +94,7 @@ public class AcceptanceTest {
         inOrder.verify(output).println("Alice - Hi Jonathan! :) (1 minute ago)");
         inOrder.verify(output).println("Jonathan - Hi Alice! :) (2 minutes ago)");
         inOrder.verify(output).println("Bob - Good game though. (5 minutes ago)");
-        inOrder.verify(output).println("Bob -Damn! We lost! (8 minutes ago)");
+        inOrder.verify(output).println("Bob - Damn! We lost! (8 minutes ago)");
         inOrder.verify(output).println("Alice - I love the weather today (10 minutes ago)");
     }
 }

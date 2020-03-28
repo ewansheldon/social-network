@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/social_network/commands/WallCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/WallCommandShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/commands/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/commands/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/commands/FollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/commands/FollowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/commands/CommandFactoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/CommandFactoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/commands/FollowRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/FollowRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/commands/ReadCommandShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/ReadCommandShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/PostFormatterShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/PostFormatterShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/commands/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/commands/CommandFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/commands/FollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/commands/FollowRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/PostFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/PostFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/commands/CommandFactoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/commands/CommandFactoryShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/commands/FollowRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/commands/FollowRepositoryShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/commands/ReadCommandShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/commands/ReadCommandShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostFormatterShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostFormatterShould.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostRepositoryShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/AcceptanceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +70,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostFormatterShould">
+  <component name="RunManager" selected="JUnit.AcceptanceTest">
+    <configuration name="CommandLineReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="social_network.command_line.CommandLineReader" />
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.command_line.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -165,29 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostRepositoryShould.get_all_posts_for_all_users_given" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostRepositoryShould" />
-      <option name="METHOD_NAME" value="get_all_posts_for_all_users_given" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AcceptanceTest" />
+        <item itemvalue="Application.CommandLineReader" />
         <item itemvalue="JUnit.PostFormatterShould" />
         <item itemvalue="JUnit.PostFormatterShouldR" />
-        <item itemvalue="JUnit.AcceptanceTest" />
         <item itemvalue="JUnit.PostRepositoryShould" />
-        <item itemvalue="JUnit.PostRepositoryShould.get_all_posts_for_all_users_given" />
       </list>
     </recent_temporary>
   </component>
@@ -221,22 +199,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585439090282">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585439186820">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585439090282" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585439090274">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585439186820" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585439186819">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585439090274" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585439090273">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585439186819" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585439186818">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585439090273" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585439090279">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585439186818" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585439186819">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585439090279" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585439186819" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -257,6 +235,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="178" y="62" key="Maven.ArtifactSearchDialog/0.0.1280.800@0.0.1280.800" timestamp="1585231524162" />
+    <state x="446" y="325" key="ReplaceDuplicatesPrompt" timestamp="1585439397267">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="446" y="325" key="ReplaceDuplicatesPrompt/0.0.1280.800@0.0.1280.800" timestamp="1585439397267" />
     <state x="128" y="0" key="SettingsEditor" timestamp="1585232136923">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -270,10 +252,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585427978350" />
-    <state x="378" y="160" key="extract.method.dialog" timestamp="1585438983076">
+    <state x="378" y="160" width="524" height="484" key="extract.method.dialog" timestamp="1585439395060">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585438983076" />
+    <state x="378" y="160" width="524" height="484" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585439395060" />
     <state x="283" y="97" key="new project wizard" timestamp="1585301653767">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -286,9 +268,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585439062722">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585439414431">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585439062722" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585439414431" />
   </component>
 </project>
