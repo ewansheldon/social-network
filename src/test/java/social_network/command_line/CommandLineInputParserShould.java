@@ -36,4 +36,13 @@ class CommandLineInputParserShould {
         assertEquals("Bob", parsedCommand.argument);
     }
 
+    @Test
+    void create_wall_command_components_from_wall_input_string() {
+        CommandLineInputParser parser = new CommandLineInputParser();
+        ParsedCommand parsedCommand = parser.getCommandComponents("Alice wall");
+
+        assertEquals("Alice", parsedCommand.username);
+        assertEquals("wall", parsedCommand.command);
+        assertEquals(null, parsedCommand.argument);
+    }
 }

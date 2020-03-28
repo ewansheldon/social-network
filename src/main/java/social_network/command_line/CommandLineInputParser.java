@@ -19,10 +19,11 @@ public class CommandLineInputParser {
         commands.put(null, "read");
         commands.put("->", "post");
         commands.put("follows", "follow");
+        commands.put("wall", "wall");
     }
 
     public ParsedCommand getCommandComponents(String input) {
-        Pattern pattern = Pattern.compile("(\\w+)\\s?(->|follows)?\\s?(.+)?");
+        Pattern pattern = Pattern.compile("(\\w+)\\s?(->|follows|wall)?\\s?(.+)?");
         Matcher matcher = pattern.matcher(input);
         matcher.matches();
         String command = commands.get(matcher.group(2));

@@ -13,7 +13,7 @@ public class FollowRepository {
     }
 
     public void save(String user, String followee) {
-        List<String> userFollows = follows.getOrDefault(user, new ArrayList<String>());
+        List<String> userFollows = follows.getOrDefault(user, new ArrayList<>());
         userFollows.add(followee);
         follows.put(user, userFollows);
     }

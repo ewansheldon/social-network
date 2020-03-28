@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/FollowRepositoryShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineInputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineInputParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/commands/FollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/commands/FollowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/commands/FollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/commands/FollowRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/command_line/CommandLineInputParserShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/command_line/CommandLineInputParserShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/command_line/CommandLineInputParserShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/command_line/CommandLineInputParserShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FollowRepositoryShould">
+  <component name="RunManager" selected="JUnit.CommandLineInputParserShould">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -164,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandLineInputParserShould" />
         <item itemvalue="JUnit.FollowRepositoryShould" />
         <item itemvalue="JUnit.AcceptanceTest" />
         <item itemvalue="JUnit.FollowCommandShould" />
         <item itemvalue="JUnit.CommandFactoryShould" />
-        <item itemvalue="JUnit.CommandLineInputParserShould" />
       </list>
     </recent_temporary>
   </component>
@@ -202,22 +202,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585427473261">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585427728772">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585427473261" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585427473259">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585427728772" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585427728770">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585427473259" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585427473258">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585427728770" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585427728768">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585427473258" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585427473260">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585427728768" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585427728771">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585427473260" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585427728771" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -267,9 +267,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585427420673">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585427658390">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585427420673" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585427658390" />
   </component>
 </project>
