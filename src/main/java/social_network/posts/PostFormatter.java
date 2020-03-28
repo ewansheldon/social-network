@@ -3,7 +3,6 @@ package social_network.posts;
 import social_network.date.TimeDifference;
 
 import java.io.PrintStream;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -17,10 +16,11 @@ public class PostFormatter {
     }
 
     public void read(List<Post> posts) {
-        for (int i = posts.size() - 1; i >= 0; i--) {
-            Post post = posts.get(i);
+        Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
+        posts.sort(compareByDate.reversed());
+        for (Post post : posts) {
             output.println(
-                    post.getContent() + " (" + timeDiff.format(post.getDate()) + ")"
+                    formatted(post)
             );
         }
     }
@@ -29,10 +29,13 @@ public class PostFormatter {
         Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
         posts.sort(compareByDate.reversed());
         for (Post post : posts) {
-            System.out.println(post.getContent());
             output.println(
-                    post.getUsername() + " - " + post.getContent() + " (" + timeDiff.format(post.getDate()) + ")"
+                    post.getUsername() + " - " + formatted(post)
             );
         }
+    }
+
+    private String formatted(Post post) {
+        return post.getContent() + " (" + timeDiff.format(post.getDate()) + ")";
     }
 }

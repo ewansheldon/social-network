@@ -135,6 +135,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostFormatterShouldR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network.posts" />
+      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostFormatterShouldR" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <extension name="coverage">
@@ -166,28 +181,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WallCommandShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="social_network.commands" />
-      <option name="MAIN_CLASS_NAME" value="social_network.commands.WallCommandShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PostFormatterShould" />
+        <item itemvalue="JUnit.PostFormatterShouldR" />
         <item itemvalue="JUnit.AcceptanceTest" />
         <item itemvalue="JUnit.PostRepositoryShould" />
         <item itemvalue="JUnit.PostRepositoryShould.get_all_posts_for_all_users_given" />
-        <item itemvalue="JUnit.WallCommandShould" />
       </list>
     </recent_temporary>
   </component>
@@ -221,22 +221,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585438913650">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585439090282">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585438913650" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585438913647">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585439090282" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585439090274">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585438913647" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585438913646">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585439090274" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585439090273">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585438913646" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585438913648">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585439090273" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585439090279">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585438913648" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585439090279" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -270,10 +270,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585427978350" />
-    <state x="378" y="160" key="extract.method.dialog" timestamp="1585421152397">
+    <state x="378" y="160" key="extract.method.dialog" timestamp="1585438983076">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585421152397" />
+    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585438983076" />
     <state x="283" y="97" key="new project wizard" timestamp="1585301653767">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -286,9 +286,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585438729783">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585439062722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585438729783" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585439062722" />
   </component>
 </project>

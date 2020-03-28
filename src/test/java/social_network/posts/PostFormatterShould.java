@@ -27,7 +27,7 @@ class PostFormatterShould {
     void print_the_posts_and_timestamp() {
         PostFormatter formatter = new PostFormatter(output, timeDiff);
         LocalDateTime date = LocalDateTime.now();
-        List<Post> posts = List.of(
+        List<Post> posts = Arrays.asList(
                 new Post("Alice", "I love the weather today", date)
         );
         given(timeDiff.format(date)).willReturn("5 minutes ago");
