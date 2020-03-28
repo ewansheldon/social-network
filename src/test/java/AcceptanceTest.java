@@ -16,12 +16,14 @@ public class AcceptanceTest {
     private CommandFactory commandFactory;
     private SocialNetworkCommandLineClient client;
     private PostRepository postRepository;
+    private PostFormatter postFormatter;
 
     @BeforeEach
     void setUp() {
         parser = new CommandLineInputParser();
         postRepository = new PostRepository();
-        commandFactory = new CommandFactory(postRepository);
+        postFormatter = new PostFormatter();
+        commandFactory = new CommandFactory(postRepository, postFormatter);
         socialNetwork = new SocialNetwork(commandFactory);
         client = new SocialNetworkCommandLineClient(output, parser, socialNetwork);
     }

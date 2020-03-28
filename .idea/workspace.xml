@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PostFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReadCommandShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CommandLineInputParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandLineInputParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommandFactoryShould">
+  <component name="RunManager" selected="JUnit.ReadCommandShould">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -117,23 +120,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostRepositoryShould.return_no_posts_if_user_has_no_posts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReadCommandShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PostRepositoryShould" />
-      <option name="METHOD_NAME" value="return_no_posts_if_user_has_no_posts" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ReadCommandShould" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CommandFactoryShould" />
+        <item itemvalue="JUnit.ReadCommandShould" />
         <item itemvalue="JUnit.AcceptanceTest" />
+        <item itemvalue="JUnit.CommandFactoryShould" />
         <item itemvalue="JUnit.CommandLineInputParserShould" />
         <item itemvalue="JUnit.PostRepositoryShould" />
-        <item itemvalue="JUnit.PostRepositoryShould.return_no_posts_if_user_has_no_posts" />
       </list>
     </recent_temporary>
   </component>
@@ -151,30 +153,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585399802922">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585399958379">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1585399802922" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1585399958379" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585236639238">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585399862585">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585400494452">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585399862585" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585399862582">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585400494452" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585400494450">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585399862582" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585399862577">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585400494450" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585400494449">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585399862577" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585399862583">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585400494449" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585400494451">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585399862583" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585400494451" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -204,10 +206,10 @@
     </state>
     <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585387273352" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1585243308696" />
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585341658493">
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585399971646">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585341658493" />
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585399971646" />
     <state x="378" y="160" key="extract.method.dialog" timestamp="1585388065904">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -216,13 +218,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="283" y="97" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1585301653767" />
-    <state x="402" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585341837774">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585400403656">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="402" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585341837774" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585399760224">
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585400403656" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585400489579">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585399760224" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585400489579" />
   </component>
 </project>
