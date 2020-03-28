@@ -62,4 +62,37 @@ public class AcceptanceTest {
         inOrder.verify(output).println("Good game though. (1 minute ago)");
         inOrder.verify(output).println("Damn! We lost! (2 minutes ago)");
     }
+
+    @Test
+    void should_display_posts_of_user_and_follows_when_wall() {
+        LocalDateTime tenMinsAgo = LocalDateTime.now().minus(10, ChronoUnit.MINUTES);
+        LocalDateTime eightMinsAgo = LocalDateTime.now().minus(8, ChronoUnit.MINUTES);
+        LocalDateTime fiveMinsAgo = LocalDateTime.now().minus(5, ChronoUnit.MINUTES);
+        LocalDateTime twoMinsAgo = LocalDateTime.now().minus(2, ChronoUnit.MINUTES);
+        LocalDateTime oneMinsAgo = LocalDateTime.now().minus(1, ChronoUnit.MINUTES);
+
+        given(dateTime.now()).willReturn(
+                tenMinsAgo,
+                eightMinsAgo,
+                fiveMinsAgo,
+                twoMinsAgo,
+                oneMinsAgo
+        );
+
+        client.executeCommand("Alice -> I love the weather today");
+        client.executeCommand("Bob -> Damn! We lost!");
+        client.executeCommand("Bob -> Good game though.");
+        client.executeCommand("Jonathan -> Hi Alice! :)");
+        client.executeCommand("Alice follows Bob");
+        client.executeCommand("Alice follows Jonathan");
+        client.executeCommand("Alice -> Hi Jonathan! :)");
+        client.executeCommand("Alice wall");
+
+        InOrder inOrder = inOrder(output);
+        inOrder.verify(output).println("Alice - Hi Jonathan! :) (1 minute ago)");
+        inOrder.verify(output).println("Jonathan - Hi Alice! :) (2 minutes ago)");
+        inOrder.verify(output).println("Bob - Good game though. (5 minutes ago)");
+        inOrder.verify(output).println("Bob -Damn! We lost! (8 minutes ago)");
+        inOrder.verify(output).println("Alice - I love the weather today (10 minutes ago)");
+    }
 }

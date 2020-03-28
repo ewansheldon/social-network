@@ -4,17 +4,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import social_network.commands.ParsedCommand;
 import social_network.SocialNetwork;
-
-import java.io.PrintStream;
+import social_network.commands.ParsedCommand;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
 class SocialNetworkCommandLineClientShould {
-    @Mock private PrintStream output;
     @Mock private SocialNetwork socialNetwork;
     @Mock private CommandLineInputParser parser;
 
