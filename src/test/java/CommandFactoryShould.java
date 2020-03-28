@@ -15,4 +15,14 @@ class CommandFactoryShould {
 
         assertTrue(command instanceof PostCommand);
     }
+
+    @Test
+    void return_a_read_command_when_type_read() {
+        CommandFactory commandFactory = new CommandFactory(postRepository);
+        Command command = commandFactory.create(
+                "Alice", "read", null
+        );
+
+        assertTrue(command instanceof ReadCommand);
+    }
 }

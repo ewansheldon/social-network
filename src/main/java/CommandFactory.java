@@ -6,6 +6,10 @@ public class CommandFactory {
     }
 
     public Command create(String username, String command, String argument) {
-        return new PostCommand(postRepository, username, argument);
+        if (command.equals("post")) {
+            return new PostCommand(postRepository, username, argument);
+        }
+
+        return new ReadCommand(postRepository, username);
     }
 }
