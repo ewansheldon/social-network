@@ -3,7 +3,6 @@ package social_network.posts;
 import social_network.date.TimeDifference;
 
 import java.io.PrintStream;
-import java.util.Comparator;
 import java.util.List;
 
 public class PostFormatter {
