@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/JDBCImplementationAcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/JDBCImplementationAcceptanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/JDBCPostRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/posts/JDBCPostRepositoryShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/social_network/infrastructure/Mysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/infrastructure/Mysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/JDBCImplementationAcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/JDBCImplementationAcceptanceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,22 +215,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586430145373">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586431572711">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586430145373" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586430145371">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586431572711" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586431572709">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586430145371" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586430145370">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586431572709" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586431572708">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586430145370" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586430145372">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586431572708" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586431572710">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586430145372" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586431572710" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

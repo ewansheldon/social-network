@@ -73,23 +73,22 @@ public class JDBCPostRepository implements PostRepository {
     public List<Post> getByUsers(List<String> users) {
         List<Post> posts = new ArrayList<>();
         try {
+            String usernameParameters = "'" + String.join("','", users) + "'";
             PreparedStatement statement = Mysql.connection().prepareStatement(
                     "SELECT posts.*, users.username FROM posts INNER JOIN users ON users.id = posts.user_id " +
-                            "WHERE users.username in (?)");
-            Array array = statement.getConnection().createArrayOf("VARCHAR", users.toArray());
-            statement.setArray(1, array);
+                            "WHERE users.username in (" + usernameParameters + ")");
             ResultSet results = statement.executeQuery();
             while (results.next()) {
-                new Post(
+                posts.add(new Post(
                         results.getString("username"),
                         results.getString("content"),
                         results.getTimestamp("created_at").toLocalDateTime()
-                );
+                ));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        throw new UnsupportedOperationException();
+        return posts;
     }
 }

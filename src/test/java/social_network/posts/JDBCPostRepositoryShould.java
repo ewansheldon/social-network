@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class JDBCPostRepositoryShould {
     public static final String USER = "Alice";
     public static final String ANOTHER_USER = "Bob";
-    public static final String ANOTHER_DIFFERENT_USER = "Alice";
+    public static final String ANOTHER_DIFFERENT_USER = "Jonathan";
 
     private PostRepository postRepository;
 
