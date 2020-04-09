@@ -12,7 +12,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
-class PostRepositoryShould {
+class InMemoryPostRepositoryShould {
 
     public static final String USER = "Alice";
     public static final String ANOTHER_USER = "Bob";

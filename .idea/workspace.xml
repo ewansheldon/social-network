@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/date/TimeDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/date/TimeDifferenceFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/date/TimeDifferenceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/date/TimeDifferenceShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/commands/FollowRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/InMemoryFollowRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/InMemoryPostRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/commands/FollowRepositoryShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostRepositoryShould.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,13 +53,17 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="social_network.commands" />
-      <recent name="" />
-    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="social_network.follows" />
       <recent name="social_network.posts" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="social_network.posts" />
+      <recent name="social_network.commands" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="social_network.commands" />
@@ -67,15 +72,17 @@
       <recent name="social_network.date" />
       <recent name="social_network" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="social_network" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="social_network.follows" />
+      <recent name="social_network.posts" />
       <recent name="social_network.commands" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AcceptanceTest">
+  <component name="RunManager" selected="JUnit.JDBCPostRepositoryShould">
     <configuration name="CommandLineReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="social_network.command_line.CommandLineReader" />
       <module name="social-network" />
@@ -119,6 +126,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDBCImplementationAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network" />
+      <option name="MAIN_CLASS_NAME" value="social_network.JDBCImplementationAcceptanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCPostRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network.posts" />
+      <option name="MAIN_CLASS_NAME" value="social_network.posts.JDBCPostRepositoryShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <extension name="coverage">
@@ -134,43 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostFormatterShouldR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostFormatterShouldR" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostRepositoryShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCPostRepositoryShould" />
+        <item itemvalue="JUnit.JDBCImplementationAcceptanceTest" />
         <item itemvalue="JUnit.AcceptanceTest" />
         <item itemvalue="Application.CommandLineReader" />
         <item itemvalue="JUnit.PostFormatterShould" />
-        <item itemvalue="JUnit.PostFormatterShouldR" />
-        <item itemvalue="JUnit.PostRepositoryShould" />
       </list>
     </recent_temporary>
   </component>
@@ -188,10 +195,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1585436414825">
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1586422405226">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1585436414825" />
+    <state x="453" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586422405226" />
+    <state x="378" y="183" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586422398061">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="183" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1586422398061" />
     <state x="414" y="266" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585420153541">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -204,22 +215,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586422161498">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586422738251">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586422161498" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586422161497">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586422738251" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586422738249">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586422161497" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586422161496">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586422738249" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586422738248">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586422161496" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586422161497">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586422738248" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586422738250">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586422161497" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586422738250" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -253,10 +264,10 @@
     </state>
     <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1586420933960" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1585243308696" />
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585427978350">
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586422508368">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1585427978350" />
+    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1586422508368" />
     <state x="378" y="160" width="524" height="484" key="extract.method.dialog" timestamp="1585439395060">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -273,9 +284,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586422011931">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586422569884">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586422011931" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586422569884" />
   </component>
 </project>

@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class FollowRepositoryShould {
+class InMemoryFollowRepositoryShould {
     @Test
     void return_users_self_by_default_for_follows_by_user() {
         FollowRepository followRepository = new InMemoryFollowRepository();
