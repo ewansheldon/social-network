@@ -1,5 +1,7 @@
 package social_network;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,12 +16,14 @@ import social_network.date.TimeDifferenceFormatter;
 import social_network.follows.FollowRepository;
 import social_network.follows.InMemoryFollowRepository;
 import social_network.follows.JDBCFollowRepository;
+import social_network.infrastructure.Mysql;
 import social_network.posts.InMemoryPostRepository;
 import social_network.posts.JDBCPostRepository;
 import social_network.posts.PostFormatter;
 import social_network.posts.PostRepository;
 
 import java.io.PrintStream;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
@@ -100,5 +104,10 @@ public class JDBCImplementationAcceptanceTest {
         inOrder.verify(output).println("Bob - Good game though. (5 minutes ago)");
         inOrder.verify(output).println("Bob - Damn! We lost! (8 minutes ago)");
         inOrder.verify(output).println("Alice - I love the weather today (10 minutes ago)");
+    }
+
+    @AfterAll
+    static void afterAll() throws SQLException {
+        Mysql.connection().close();
     }
 }

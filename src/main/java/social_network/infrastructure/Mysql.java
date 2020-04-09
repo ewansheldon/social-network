@@ -11,7 +11,9 @@ public class Mysql {
         if (connection == null) {
             try {
                 connection = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/social_network", "root", "buspace210");
+                        "jdbc:mysql://localhost:3306/social_network", "root",
+                        "password"
+                );
             } catch (SQLException e) {
                 e.printStackTrace();
             }
