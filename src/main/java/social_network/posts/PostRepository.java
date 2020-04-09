@@ -27,9 +27,11 @@ public class PostRepository {
     }
 
     public List<Post> getByUsername(String username) {
-        return posts.getOrDefault(username,
+        List<Post> userPosts = posts.getOrDefault(username,
                 Collections.emptyList()
         );
+        sortChronologically(userPosts);
+        return userPosts;
     }
 
     public List<Post> getByUsers(List<String> users) {
@@ -37,6 +39,12 @@ public class PostRepository {
         for (String user : users) {
             followPosts.addAll(posts.get(user));
         }
+        sortChronologically(followPosts);
         return followPosts;
+    }
+
+    private void sortChronologically(List<Post> followPosts) {
+        Comparator<Post> compareByDate = Comparator.comparing(Post::getDate);
+        followPosts.sort(compareByDate.reversed());
     }
 }

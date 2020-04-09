@@ -4,8 +4,8 @@
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/AcceptanceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -199,22 +199,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585439186820">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586421579000">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585439186820" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585439186819">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586421579000" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586421578999">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585439186819" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585439186818">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586421578999" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586421578998">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585439186818" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585439186819">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586421578998" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586421579000">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585439186819" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586421579000" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -239,14 +239,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="446" y="325" key="ReplaceDuplicatesPrompt/0.0.1280.800@0.0.1280.800" timestamp="1585439397267" />
-    <state x="128" y="0" key="SettingsEditor" timestamp="1585232136923">
+    <state x="128" y="0" key="SettingsEditor" timestamp="1585439481675">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1585232136923" />
-    <state x="319" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1585387273352">
+    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1585439481675" />
+    <state x="319" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1586420933960">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585387273352" />
+    <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1586420933960" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1585243308696" />
     <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585427978350">
       <screen x="0" y="0" width="1280" height="800" />
@@ -256,21 +256,21 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="160" width="524" height="484" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1585439395060" />
-    <state x="283" y="97" key="new project wizard" timestamp="1585301653767">
+    <state x="283" y="97" key="new project wizard" timestamp="1585831026129">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="283" y="97" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1585301653767" />
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1585438151450">
+    <state x="283" y="97" key="new project wizard/0.0.1280.800@0.0.1280.800" timestamp="1585831026129" />
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog" timestamp="1586421571791">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1585438151450" />
+    <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1586421571791" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1585420612447">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1585439414431">
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586421065891">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585439414431" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586421065891" />
   </component>
 </project>
