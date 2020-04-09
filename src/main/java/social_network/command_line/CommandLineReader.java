@@ -4,7 +4,7 @@ import social_network.SocialNetwork;
 import social_network.commands.CommandFactory;
 import social_network.follows.FollowRepository;
 import social_network.date.DateTime;
-import social_network.date.TimeDifference;
+import social_network.date.TimeDifferenceFormatter;
 import social_network.follows.InMemoryFollowRepository;
 import social_network.posts.InMemoryPostRepository;
 import social_network.posts.PostFormatter;
@@ -19,7 +19,7 @@ public class CommandLineReader {
     private static DateTime dateTime;
     private static PostRepository postRepository;
     private static PrintStream output;
-    private static TimeDifference time;
+    private static TimeDifferenceFormatter time;
     private static PostFormatter postFormatter;
     private static CommandFactory commandFactory;
     private static SocialNetwork socialNetwork;
@@ -43,7 +43,7 @@ public class CommandLineReader {
         parser = new CommandLineInputParser();
         dateTime = new DateTime();
         output = System.out;
-        time = new TimeDifference();
+        time = new TimeDifferenceFormatter();
         postRepository = new InMemoryPostRepository(dateTime);
         postFormatter = new PostFormatter(System.out, time);
         followRepository = new InMemoryFollowRepository();

@@ -1,17 +1,17 @@
 package social_network.posts;
 
-import social_network.date.TimeDifference;
+import social_network.date.TimeDifferenceFormatter;
 
 import java.io.PrintStream;
 import java.util.List;
 
 public class PostFormatter {
     private PrintStream output;
-    private TimeDifference timeDiff;
+    private TimeDifferenceFormatter timeDiffFormatter;
 
-    public PostFormatter(PrintStream output, TimeDifference time) {
+    public PostFormatter(PrintStream output, TimeDifferenceFormatter timeDiffFormatter) {
         this.output = output;
-        this.timeDiff = time;
+        this.timeDiffFormatter = timeDiffFormatter;
     }
 
     public void read(List<Post> posts) {
@@ -31,6 +31,6 @@ public class PostFormatter {
     }
 
     private String formatted(Post post) {
-        return post.getContent() + " (" + timeDiff.format(post.getDate()) + ")";
+        return post.getContent() + " (" + timeDiffFormatter.format(post.getDate()) + ")";
     }
 }

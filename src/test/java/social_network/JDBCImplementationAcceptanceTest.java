@@ -9,11 +9,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import social_network.command_line.CommandLineInputParser;
 import social_network.command_line.SocialNetworkCommandLineClient;
 import social_network.commands.CommandFactory;
-import social_network.follows.FollowRepository;
 import social_network.date.DateTime;
 import social_network.date.TimeDifferenceFormatter;
+import social_network.follows.FollowRepository;
 import social_network.follows.InMemoryFollowRepository;
+import social_network.follows.JDBCFollowRepository;
 import social_network.posts.InMemoryPostRepository;
+import social_network.posts.JDBCPostRepository;
 import social_network.posts.PostFormatter;
 import social_network.posts.PostRepository;
 
@@ -25,7 +27,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.inOrder;
 
 @ExtendWith(MockitoExtension.class)
-public class AcceptanceTest {
+public class JDBCImplementationAcceptanceTest {
     private SocialNetworkCommandLineClient client;
 
     @Mock private PrintStream output;
@@ -33,10 +35,10 @@ public class AcceptanceTest {
 
     @BeforeEach
     void setUp() {
-        PostRepository postRepository = new InMemoryPostRepository(dateTime);
+        PostRepository postRepository = new JDBCPostRepository(dateTime);
         TimeDifferenceFormatter timeDiff = new TimeDifferenceFormatter();
         PostFormatter postFormatter = new PostFormatter(output, timeDiff);
-        FollowRepository followRepository = new InMemoryFollowRepository();
+        FollowRepository followRepository = new JDBCFollowRepository();
         CommandFactory commandFactory = new CommandFactory(postRepository, followRepository, postFormatter);
         SocialNetwork socialNetwork = new SocialNetwork(commandFactory);
         CommandLineInputParser parser = new CommandLineInputParser();

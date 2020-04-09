@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InOrder;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import social_network.date.TimeDifference;
+import social_network.date.TimeDifferenceFormatter;
 
 import java.io.PrintStream;
 import java.time.LocalDateTime;
@@ -21,7 +20,7 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(MockitoExtension.class)
 class PostFormatterShould {
     @Mock private PrintStream output;
-    @Mock private TimeDifference timeDiff;
+    @Mock private TimeDifferenceFormatter timeDiff;
 
     @Test
     void print_the_posts_and_timestamp() {

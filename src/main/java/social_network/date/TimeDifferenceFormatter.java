@@ -3,7 +3,7 @@ package social_network.date;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
-public class TimeDifference {
+public class TimeDifferenceFormatter {
     public static final int MINUTE = 60;
     public static final int HOUR = 60 * 60;
     public static final int DAY = 60 * 60 * 24;
