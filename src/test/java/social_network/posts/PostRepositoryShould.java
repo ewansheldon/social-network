@@ -22,7 +22,7 @@ class PostRepositoryShould {
 
     @BeforeEach
     void setUp() {
-        postRepository = new PostRepository(dateTime);
+        postRepository = new InMemoryPostRepository(dateTime);
     }
 
     @Test

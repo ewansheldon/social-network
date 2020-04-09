@@ -1,5 +1,6 @@
 package social_network.commands;
 
+import social_network.follows.FollowRepository;
 import social_network.posts.PostFormatter;
 import social_network.posts.PostRepository;
 

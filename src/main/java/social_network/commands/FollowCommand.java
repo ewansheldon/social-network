@@ -1,5 +1,7 @@
 package social_network.commands;
 
+import social_network.follows.FollowRepository;
+
 public class FollowCommand implements Command {
     private final FollowRepository followRepository;
     private final String username;

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/InMemoryPostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/command_line/CommandLineReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/PostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/AcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -199,22 +200,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586421579000">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586421630245">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586421579000" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586421578999">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586421630245" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586421630244">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586421578999" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586421578998">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586421630244" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586421630243">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586421578998" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586421579000">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586421630243" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586421630245">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586421579000" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586421630245" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
