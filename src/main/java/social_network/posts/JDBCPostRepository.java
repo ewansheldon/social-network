@@ -3,12 +3,18 @@ package social_network.posts;
 import social_network.date.DateTime;
 import social_network.infrastructure.Mysql;
 
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 public class JDBCPostRepository implements PostRepository {
+    private DateTime dateTime;
+
     public JDBCPostRepository(DateTime dateTime) {
+        this.dateTime = dateTime;
     }
 
     public void save(String username, String content) {
@@ -17,10 +23,11 @@ public class JDBCPostRepository implements PostRepository {
         try {
             PreparedStatement statement = Mysql.connection().prepareStatement(
                     "INSERT INTO posts (user_id, content, created_at) VALUES " +
-                            "(?, ?, NOW());");
+                            "(?, ?, ?);");
 
             statement.setInt(1, userID);
             statement.setString(2, content);
+            statement.setTimestamp(3, Timestamp.valueOf(dateTime.now()));
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -53,7 +60,8 @@ public class JDBCPostRepository implements PostRepository {
         try {
             PreparedStatement statement = Mysql.connection().prepareStatement(
                     "SELECT * FROM posts INNER JOIN users ON " +
-                            "posts.user_id = users.id WHERE users.username = ?;");
+                            "posts.user_id = users.id WHERE users.username = ? " +
+                            "ORDER BY posts.created_at DESC;");
             statement.setString(1, username);
 
             ResultSet postsResults = statement.executeQuery();
@@ -67,6 +75,7 @@ public class JDBCPostRepository implements PostRepository {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return posts;
     }
 
@@ -76,9 +85,12 @@ public class JDBCPostRepository implements PostRepository {
             String usernameParameters = "'" + String.join("','", users) + "'";
             PreparedStatement statement = Mysql.connection().prepareStatement(
                     "SELECT posts.*, users.username FROM posts INNER JOIN users ON users.id = posts.user_id " +
-                            "WHERE users.username in (" + usernameParameters + ")");
+                            "WHERE users.username in (" + usernameParameters + ") ORDER BY created_at DESC");
             ResultSet results = statement.executeQuery();
             while (results.next()) {
+                System.out.println(results.getString("username"));
+                System.out.println(results.getString("content"));
+                System.out.println(results.getString("created_at"));
                 posts.add(new Post(
                         results.getString("username"),
                         results.getString("content"),
@@ -88,7 +100,6 @@ public class JDBCPostRepository implements PostRepository {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return posts;
     }
 }

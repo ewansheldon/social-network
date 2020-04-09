@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/social_network/follows/JDBCFollowRepositoryShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/follows/JDBCFollowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/follows/JDBCFollowRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/social_network/infrastructure/Mysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/infrastructure/Mysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/JDBCImplementationAcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/JDBCImplementationAcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/social_network/follows/JDBCFollowRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/follows/JDBCFollowRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/JDBCImplementationAcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/JDBCImplementationAcceptanceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -58,6 +61,7 @@
       <recent name="social_network.posts" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="social_network.follows" />
       <recent name="social_network.posts" />
       <recent name="social_network.commands" />
       <recent name="" />
@@ -82,20 +86,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCPostRepositoryShould">
-    <configuration name="CommandLineReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="social_network.command_line.CommandLineReader" />
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.command_line.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JDBCFollowRepositoryShould">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="replType" value="NREPL" />
       <setting name="execution" value="LEININGEN" />
@@ -126,6 +117,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JDBCFollowRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.follows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network.follows" />
+      <option name="MAIN_CLASS_NAME" value="social_network.follows.JDBCFollowRepositoryShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCFollowRepositoryShould.return_users_self_by_default_for_follows_by_user" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="social_network.follows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="social_network.follows" />
+      <option name="MAIN_CLASS_NAME" value="social_network.follows.JDBCFollowRepositoryShould" />
+      <option name="METHOD_NAME" value="return_users_self_by_default_for_follows_by_user" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCImplementationAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <extension name="coverage">
@@ -141,43 +163,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCPostRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JDBCImplementationAcceptanceTest.should_display_a_users_posts_after_posting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-network" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="social_network.posts.*" />
+          <option name="PATTERN" value="social_network.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.JDBCPostRepositoryShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostFormatterShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="social-network" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="social_network.posts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="social_network.posts" />
-      <option name="MAIN_CLASS_NAME" value="social_network.posts.PostFormatterShould" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="social_network" />
+      <option name="MAIN_CLASS_NAME" value="social_network.JDBCImplementationAcceptanceTest" />
+      <option name="METHOD_NAME" value="should_display_a_users_posts_after_posting" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JDBCPostRepositoryShould" />
+        <item itemvalue="JUnit.JDBCFollowRepositoryShould" />
         <item itemvalue="JUnit.JDBCImplementationAcceptanceTest" />
+        <item itemvalue="JUnit.JDBCFollowRepositoryShould.return_users_self_by_default_for_follows_by_user" />
+        <item itemvalue="JUnit.JDBCImplementationAcceptanceTest.should_display_a_users_posts_after_posting" />
         <item itemvalue="JUnit.AcceptanceTest" />
-        <item itemvalue="Application.CommandLineReader" />
-        <item itemvalue="JUnit.PostFormatterShould" />
       </list>
     </recent_temporary>
   </component>
@@ -215,38 +223,50 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586431599022">
+    <state x="284" y="87" key="#xdebugger.evaluate" timestamp="1586442925219">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586431599022" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586431599021">
+    <state x="284" y="87" key="#xdebugger.evaluate/0.0.1280.800@0.0.1280.800" timestamp="1586442925219" />
+    <state width="1878" height="431" key="GridCell.Tab.0.bottom" timestamp="1586447624360">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="431" key="GridCell.Tab.0.bottom/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447594310" />
+    <state width="1238" height="263" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586443085700" />
+    <state width="1878" height="431" key="GridCell.Tab.0.bottom/0.23.1280.777/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447624360" />
+    <state width="1878" height="431" key="GridCell.Tab.0.center" timestamp="1586447624356">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="431" key="GridCell.Tab.0.center/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447594306" />
+    <state width="1238" height="263" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586443085699" />
+    <state width="1878" height="431" key="GridCell.Tab.0.center/0.23.1280.777/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447624356" />
+    <state width="1878" height="431" key="GridCell.Tab.0.left" timestamp="1586447624355">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="431" key="GridCell.Tab.0.left/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447594302" />
+    <state width="1238" height="263" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586443085698" />
+    <state width="1878" height="431" key="GridCell.Tab.0.left/0.23.1280.777/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447624355" />
+    <state width="1878" height="431" key="GridCell.Tab.0.right" timestamp="1586447624358">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="431" key="GridCell.Tab.0.right/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447594308" />
+    <state width="1238" height="263" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586443085700" />
+    <state width="1878" height="431" key="GridCell.Tab.0.right/0.23.1280.777/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586447624358" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1586443085703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586431599021" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586431599020">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586443085703" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1586443085702">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586431599020" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586431599021">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1586443085702" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1586443085701">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586431599021" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1586443085701" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1586443085703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585352767722" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1585352767721">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1585352767721" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1585352767720">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1585352767720" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1585352767721">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1585352767721" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1586443085703" />
     <state x="178" y="62" key="Maven.ArtifactSearchDialog" timestamp="1585231524162">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -264,9 +284,10 @@
     </state>
     <state x="319" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1586420933960" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1585243308696" />
-    <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586422508368">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="306" y="-879" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586444123272">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="306" y="-879" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586444123272" />
     <state x="419" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1586422508368" />
     <state x="378" y="160" width="524" height="484" key="extract.method.dialog" timestamp="1586427082509">
       <screen x="0" y="0" width="1280" height="800" />
@@ -284,9 +305,17 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1586423803320" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586429734078">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="132" y="-913" width="1146" height="913" key="search.everywhere.popup" timestamp="1586445973084">
+      <screen x="-323" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586429734078" />
+    <state x="132" y="-913" width="1146" height="913" key="search.everywhere.popup/0.0.1280.800/-323.-1080.1920.1080@-323.-1080.1920.1080" timestamp="1586445973084" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586431759720" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="postsResults.getTimestamp(&quot;created_at&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

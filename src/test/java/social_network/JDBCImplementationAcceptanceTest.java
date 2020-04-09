@@ -23,7 +23,9 @@ import social_network.posts.PostFormatter;
 import social_network.posts.PostRepository;
 
 import java.io.PrintStream;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
@@ -104,6 +106,15 @@ public class JDBCImplementationAcceptanceTest {
         inOrder.verify(output).println("Bob - Good game though. (5 minutes ago)");
         inOrder.verify(output).println("Bob - Damn! We lost! (8 minutes ago)");
         inOrder.verify(output).println("Alice - I love the weather today (10 minutes ago)");
+    }
+
+    @AfterEach
+        void tearDown() throws SQLException {
+            Connection conn = Mysql.connection();
+            Statement statement = conn.createStatement();
+        statement.executeUpdate("TRUNCATE users;");
+        statement.executeUpdate("TRUNCATE posts;");
+        statement.executeUpdate("TRUNCATE follows;");
     }
 
     @AfterAll
