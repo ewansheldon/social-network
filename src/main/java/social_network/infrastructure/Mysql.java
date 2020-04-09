@@ -12,7 +12,7 @@ public class Mysql {
             try {
                 connection = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/social_network", "root",
-                        "buspace210"
+                        "password"
                 );
             } catch (SQLException e) {
                 e.printStackTrace();
