@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc1f651-8f7e-48a0-8adb-17cc57edaa99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/commands/FollowRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/commands/InMemoryFollowRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/PostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/InMemoryPostRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/commands/FollowRepositoryShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/PostRepositoryShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/infrastructure/Mysql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/social_network/posts/JDBCPostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/social_network/posts/JDBCPostRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/social_network/posts/JDBCPostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/social_network/posts/JDBCPostRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/social_network/posts/JDBCPostRepositoryShould.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,7 +48,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -215,22 +216,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1585236639238" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586422738251">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586426548703">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586422738251" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586422738249">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586426548703" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586426548701">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586422738249" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586422738248">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586426548701" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586426548700">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586422738248" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586422738250">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586426548700" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586426548702">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586422738250" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586426548702" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1585352767722">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -255,10 +256,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="446" y="325" key="ReplaceDuplicatesPrompt/0.0.1280.800@0.0.1280.800" timestamp="1585439397267" />
-    <state x="128" y="0" key="SettingsEditor" timestamp="1585439481675">
+    <state x="128" y="0" key="SettingsEditor" timestamp="1586424445307">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1585439481675" />
+    <state x="128" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1586424445307" />
     <state x="319" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1586420933960">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -280,13 +281,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="575" y="0" width="475" height="744" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1586421571791" />
-    <state x="305" y="185" key="run.anything.popup" timestamp="1585420612447">
+    <state x="305" y="185" key="run.anything.popup" timestamp="1586423803320">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1585420612447" />
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586422569884">
+    <state x="305" y="185" key="run.anything.popup/0.0.1280.800@0.0.1280.800" timestamp="1586423803320" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup" timestamp="1586426344501">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586422569884" />
+    <state x="303" y="124" width="764" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1586426344501" />
   </component>
 </project>
